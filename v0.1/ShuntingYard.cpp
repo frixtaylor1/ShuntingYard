@@ -1,8 +1,11 @@
 #include "./ShuntingYard.h"
+#include "./TokenSubClass.h"
+
 #include <iomanip>
 
 #include <queue>
 #include <stack>
+
 //-----------------------------------------------------------------------//
 //		LexicalAnalizer Class
 //-----------------------------------------------------------------------//
