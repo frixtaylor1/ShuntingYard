@@ -69,6 +69,8 @@ interface IToken
 	Abstract TokenTypes getType() const = 0;
 	Abstract const char* getTokenName() const = 0;
 	Abstract bool isType(const TokenTypes& type) = 0;
+	Abstract TokenCategory getCategory() const = 0;
+	Abstract const char* getCategoryName() const = 0;
 };
 
 //-----------------------------------------------------------------------//
@@ -78,8 +80,6 @@ AbstractClass Token : extends IToken
 {
 public:
 	Abstract ~Token() {}
-	Abstract TokenCategory getCategory() const = 0;
-	Abstract const char* getName() const = 0;
 
 	bool isInCategory(const TokenCategory& category)
 	{
@@ -97,7 +97,7 @@ private:
 	{ \
 		return TokenCategory::category; \
 	} \
-	const char* getName() const \
+	const char* getCategoryName() const \
 	{ \
 		return #category; \
 	}

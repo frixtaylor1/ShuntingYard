@@ -25,7 +25,7 @@
 
 
 #include "./ShuntingYard.h"
-#define __DEBUG__
+// #define __DEBUG__
 
 #ifdef __DEBUG__
 	static std::uint32_t s_allocations = 0;
@@ -59,5 +59,6 @@ int main()
 #ifdef __DEBUG__
 	std::cout << s_allocations << " allocations" << std::endl;
 #endif // __DEBUG__
+
 	return 0;
 }
