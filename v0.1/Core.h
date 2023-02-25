@@ -40,8 +40,6 @@
 
 #define Abstract  virtual
 
-#define PLACEBIT(x) 1 << x
-
 typedef std::string SafeString;
 typedef SafeString String;
 

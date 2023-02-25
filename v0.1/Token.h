@@ -32,10 +32,10 @@ enum TokenCategory
 {
 	None = 0,
 	
-	OperatorToken 		= PLACEBIT(1),
-	NumberToken 		= PLACEBIT(2),
-	FunctionToken 		= PLACEBIT(3),
-	BlockClosureToken 	= PLACEBIT(4)
+	OperatorToken 		= 1,
+	NumberToken 		= 2,
+	FunctionToken 		= 3,
+	BlockClosureToken 	= 4
 };
 
 enum TokenTypes
