@@ -29,7 +29,6 @@
 #include <algorithm>
 
 #include "./Token.h"
-#include "./TokenSubClass.h"
 
 //-----------------------------------------------------------------------//
 

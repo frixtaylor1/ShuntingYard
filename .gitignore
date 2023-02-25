@@ -31,3 +31,9 @@
 *.out
 *.app
 *.bin
+
+# Directories
+build/
+
+# pdfs
+*.pdf
