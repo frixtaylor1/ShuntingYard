@@ -183,20 +183,20 @@ void SyntaxAnalizer::showRawExpression()
 }
 
 /*------------------------------------------------------------------------------------*/
-AddingOperator 		addingOperator;
-SubstractOperator 	substractOperator;
-DivideOperator 		divideOperator;
-MultiplyOperator 	multiplyOperator;
+static AddingOperator 		addingOperator;
+static SubstractOperator 	substractOperator;
+static DivideOperator 		divideOperator;
+static MultiplyOperator 	multiplyOperator;
 
-IntegerTokenClass 	integerTokenClass;
-FloatTokenClass 	floatTokenClass;
+static IntegerTokenClass 	integerTokenClass;
+static FloatTokenClass 		floatTokenClass;
 
-CurlyBraceOpen 		curlyBraceOpen;
-CurlyBraceClose 	curlyBraceClose;
-SquareBracketClose 	squareBracketClose;
-SquareBracketOpen 	squareBracketOpen;
-ParenthesisOpen 	parenthesisOpen;
-ParenthesisClose 	parenthesisClose;
+static CurlyBraceOpen 		curlyBraceOpen;
+static CurlyBraceClose 		curlyBraceClose;
+static SquareBracketClose 	squareBracketClose;
+static SquareBracketOpen 	squareBracketOpen;
+static ParenthesisOpen 		parenthesisOpen;
+static ParenthesisClose 	parenthesisClose;
 /*------------------------------------------------------------------------------------*/
 
 void SyntaxAnalizer::internalAnalizeWithConstrains(const String& lexeme)
