@@ -208,20 +208,20 @@ void SyntaxAnalizer::showRawExpression()
 }
 
 /*------------------------------------------------------------------------------------*/
+
 static AddingOperator 		addingOperator;
 static SubstractOperator 	substractOperator;
 static DivideOperator 		divideOperator;
 static MultiplyOperator 	multiplyOperator;
-
 static IntegerTokenClass 	integerTokenClass;
 static FloatTokenClass 		floatTokenClass;
-
 static CurlyBraceOpen 		curlyBraceOpen;
 static CurlyBraceClose 		curlyBraceClose;
 static SquareBracketClose 	squareBracketClose;
 static SquareBracketOpen 	squareBracketOpen;
 static ParenthesisOpen 		parenthesisOpen;
 static ParenthesisClose 	parenthesisClose;
+
 /*------------------------------------------------------------------------------------*/
 
 void SyntaxAnalizer::internalAnalizeWithConstrains(const String& lexeme)
